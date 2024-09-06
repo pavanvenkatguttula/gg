@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+    <div id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="sa.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="signin.html">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  </div>
+  
+  <header class="jumbotron text-center">
+    <h1 class="display-4">Sign Up</h1>
+  </header>
+  
+  <!-- Main content -->
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="text">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="Number">Pone Number</label>
+        <input type="Number" class="form-control" id="number" placeholder="Enter phonenumber">
+      </div>
+      <div class="form-group">
+        <label for="text">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Enter address">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <button id="myButton" type="submit" class="btn btn-primary">Sign UP</button>
+      <a href="sa.html" class="btn btn-link">Login</a>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <footer class="bg-light text-center py-3">
+  <p>&copy; 2024 Your Company</p>
+</footer>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <script>
+    $(function() {
+      $('#navbar').load('navbar.html');
+      $('#footer').load('footer.html');
+    });
+  </script>
+</body>
+</html>
